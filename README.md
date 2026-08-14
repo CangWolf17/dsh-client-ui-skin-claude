@@ -1,76 +1,45 @@
 # dsh-client-ui-skin-claude
 
-A Claude-style skin for the [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (dsh) Web GUI — warm-black canvas, Anthropic clay accent, serif UI, and the polished component details that make Claude feel like Claude.
+[English](README.en.md) | 中文
 
-![Claude Dark](docs/dark.png)
-![Claude Light](docs/light.png)
+Claude 风格的 DSH Web 界面皮肤：暖黑画布、陶橙点缀、衬线 UI，跟随原生亮/暗主题。
 
-## Features
+![暗色](docs/dark.png) · ![亮色](docs/light.png)
 
-- **Anthropic official brand palette** — warm-black `#141413`, elevated `#262624`, deep input `#0a0a09`, clay accent `#d97757`, cream `#faf9f5`
-- **Claude typography** — serif UI (Georgia fallback of Anthropic Serif Web Text), serif headlines, Anthropic Mono stack for code
-- **Component details** — slim rounded scrollbars, clay selection highlight, clay focus rings, 8px buttons/inputs, pill badges, 12px cards, raised active tabs, layered shadows, tracked-out captions
-- **Native light/dark** — follows the dsh theme switch, both variants styled
-- **Presentation-only** — no services injected, no cordis events, no model requests; every write retracted on dispose
-- **No build step** — the bundle is hand-written in the official `__ModuleLoader__` format
-- **No external assets** — system fonts only, works offline
+## 特性
 
-## Install
+- 暖黑（#141413）画布 + Anthropic 陶橙（#d97757）点缀
+- 衬线界面字体（Georgia），代码用等宽栈
+- 细滚动条、陶橙选中 / 焦点、胶囊徽章
+- 亮 / 暗双主题，跟随系统切换
 
-```sh
-dsh plugin --profile web add link:/path/to/dsh-client-ui-skin-claude
-```
-
-or from this repo:
+## 安装
 
 ```sh
 dsh plugin --profile web add github:PAKIKNOWLEDGE/dsh-client-ui-skin-claude
 ```
 
-Then restart `dsh web` (a new bundle layer requires a restart), refresh the page.
+装完重启 `dsh web`，刷新页面。
 
-## Switching
+## 切换
 
-Only one skin is ever active at a time. Enable this skin by editing
-`~/.dsh/cordis.patch.yml`:
+同一时刻只启用一个皮肤。编辑 `~/.dsh/cordis.patch.yml`：
 
 ```yaml
-# outside the dsh-skin managed section
+# dsh-skin managed 段之外
 - insert:
     - id: ui-skin-claude
       name: '@dsh-external/dsh-client-ui-skin-claude'
 ```
 
-(and `disabled: true` the currently active skin's row). The config watcher
-hot-reloads within seconds; refresh the page. You can also use the
-[dsh-skin](https://github.com/KinGao294/dsh-skin) switcher if it recognizes it.
+（并把当前启用皮肤的 `disabled: true` 加上。）配置 watcher 几秒内热加载，刷新页面生效。
 
-## Uninstall
+## 卸载
 
-1. Remove the `ui-skin-claude` insert row from `~/.dsh/cordis.patch.yml`.
+1. 删除 `~/.dsh/cordis.patch.yml` 里的 `ui-skin-claude` insert 行
 2. `dsh plugin --profile web remove @dsh-external/dsh-client-ui-skin-claude`
-3. Restart `dsh web`.
+3. 重启 `dsh web`
 
-## Project layout
-
-```
-dsh-client-ui-skin-claude/
-├── package.json      # official dsh bundle manifest (dsh.bundle + dsh.client)
-├── cordis.patch.yml  # inserts the ui-skin-claude loader row on install
-├── skin.json         # skin-center registry metadata
-├── lib/
-│   ├── index.js      # no-op host entry
-│   └── client.js     # hand-written browser bundle (no build step)
-└── README.md
-```
-
-## Design reference
-
-The palette and component details are aligned with Anthropic's official brand
-tokens and the community-documented Claude design system (Copernicus/Tiempos
-headlines, StyreneB body with Inter fallback, JetBrains Mono code, clay
-`#d97757` accent on warm-black `#141413`).
-
-## License
+## 许可
 
 MIT
