@@ -2,8 +2,8 @@
 
 A Claude-style skin for the [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (dsh) Web GUI — warm-black canvas, Anthropic clay accent, serif UI, and the polished component details that make Claude feel like Claude.
 
-> Screenshots: open the repo gallery later or take your own after install
-> (see [docs](docs/) when present).
+![Claude Dark](docs/dark.png)
+![Claude Light](docs/light.png)
 
 ## Features
 

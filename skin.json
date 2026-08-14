@@ -20,5 +20,9 @@
     "id": "ui-skin-claude",
     "bundleWired": false
   },
+  "preview": {
+    "light": "preview/light.png",
+    "dark": "preview/dark.png"
+  },
   "order": 10
 }
