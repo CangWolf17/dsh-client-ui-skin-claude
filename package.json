@@ -1,0 +1,33 @@
+{
+  "name": "@dsh-external/dsh-client-ui-skin-claude",
+  "description": "Claude-style dark skin for the dsh web GUI — charcoal panels, warm clay accent, rounded composer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "files": [
+    "lib",
+    "skin.json",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://example.invalid/dsh-client-ui-skin-claude"
+  }
+}
