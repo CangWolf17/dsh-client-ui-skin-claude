@@ -1,5 +1,7 @@
 # dsh-client-ui-skin-claude
 
+[![awesome · DSH plugin](https://awesome-dsh-plugin.com/badge.svg)](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin)
+
 A Claude-style skin for the DSH Web GUI: warm-black canvas, clay accent, serif UI, follows the native light/dark theme.
 
 ![Dark](docs/dark.png) · ![Light](docs/light.png)

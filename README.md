@@ -1,6 +1,6 @@
 # dsh-client-ui-skin-claude
 
-[English](README.en.md) | 中文
+[![awesome · DSH plugin](https://awesome-dsh-plugin.com/badge.svg)](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) [English](README.en.md) | 中文
 
 Claude 风格的 DSH Web 界面皮肤：暖黑画布、陶橙点缀、衬线 UI，跟随原生亮/暗主题。
 
