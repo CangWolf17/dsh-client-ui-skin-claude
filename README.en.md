@@ -29,7 +29,7 @@ Only one skin is active at a time. Edit `~/.dsh/cordis.patch.yml`:
 # outside the dsh-skin managed section
 - insert:
     - id: ui-skin-claude
-      name: '@dsh-external/dsh-client-ui-skin-claude'
+      name: '@pakiknowledge/dsh-client-ui-skin-claude'
 ```
 
 (and add `disabled: true` to the currently active skin's row). The config watcher hot-reloads within seconds; refresh the page.
@@ -37,7 +37,7 @@ Only one skin is active at a time. Edit `~/.dsh/cordis.patch.yml`:
 ## Uninstall
 
 1. Remove the `ui-skin-claude` insert row from `~/.dsh/cordis.patch.yml`.
-2. `dsh plugin --profile web remove @dsh-external/dsh-client-ui-skin-claude`
+2. `dsh plugin --profile web remove @pakiknowledge/dsh-client-ui-skin-claude`
 3. Restart `dsh web`.
 
 ## License

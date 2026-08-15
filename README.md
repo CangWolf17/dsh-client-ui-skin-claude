@@ -29,7 +29,7 @@ dsh plugin --profile web add github:PAKIKNOWLEDGE/dsh-client-ui-skin-claude
 # dsh-skin managed 段之外
 - insert:
     - id: ui-skin-claude
-      name: '@dsh-external/dsh-client-ui-skin-claude'
+      name: '@pakiknowledge/dsh-client-ui-skin-claude'
 ```
 
 （并把当前启用皮肤的 `disabled: true` 加上。）配置 watcher 几秒内热加载，刷新页面生效。
@@ -37,7 +37,7 @@ dsh plugin --profile web add github:PAKIKNOWLEDGE/dsh-client-ui-skin-claude
 ## 卸载
 
 1. 删除 `~/.dsh/cordis.patch.yml` 里的 `ui-skin-claude` insert 行
-2. `dsh plugin --profile web remove @dsh-external/dsh-client-ui-skin-claude`
+2. `dsh plugin --profile web remove @pakiknowledge/dsh-client-ui-skin-claude`
 3. 重启 `dsh web`
 
 ## 许可

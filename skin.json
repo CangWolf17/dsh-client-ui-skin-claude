@@ -15,7 +15,7 @@
   ],
   "accent": "#d97757",
   "bodyAttr": "data-dsh-claude",
-  "package": "@dsh-external/dsh-client-ui-skin-claude",
+  "package": "@pakiknowledge/dsh-client-ui-skin-claude",
   "wiring": {
     "id": "ui-skin-claude",
     "bundleWired": false

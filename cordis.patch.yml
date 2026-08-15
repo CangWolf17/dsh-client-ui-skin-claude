@@ -4,4 +4,4 @@
 # skins is managed by scripts/dsh-skin (home-layer disabled rows).
 - insert:
     - id: ui-skin-claude
-      name: '@dsh-external/dsh-client-ui-skin-claude'
+      name: '@pakiknowledge/dsh-client-ui-skin-claude'
