@@ -15,6 +15,14 @@ Claude 风格的 DSH Web 界面皮肤：暖黑画布、陶橙点缀、衬线 UI�
 
 ## 安装
 
+从 npm 安装（推荐，预构建免授权）：
+
+```sh
+dsh plugin --profile web add @pakiknowledge/dsh-client-ui-skin-claude
+```
+
+或从 GitHub 安装：
+
 ```sh
 dsh plugin --profile web add github:PAKIKNOWLEDGE/dsh-client-ui-skin-claude
 ```

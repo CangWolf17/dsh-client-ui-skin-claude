@@ -15,6 +15,14 @@ A Claude-style skin for the DSH Web GUI: warm-black canvas, clay accent, serif U
 
 ## Install
 
+From npm (recommended, prebuilt, no build permission needed):
+
+```sh
+dsh plugin --profile web add @pakiknowledge/dsh-client-ui-skin-claude
+```
+
+Or from GitHub:
+
 ```sh
 dsh plugin --profile web add github:PAKIKNOWLEDGE/dsh-client-ui-skin-claude
 ```
